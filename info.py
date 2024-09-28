@@ -17,13 +17,13 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'N2Bot')
-API_ID = int(environ.get('API_ID', '25163484'))
-API_HASH = environ.get('API_HASH', '145bcbc424d1c1ffe04f3e607ea55c9a')
+API_ID = int(environ.get('API_ID', '27064328'))
+API_HASH = environ.get('API_HASH', '7be1392c2fe5ebf4fc3228706fbfb504'')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
-PICS = (environ.get('PICS', 'https://graph.org/file/d643b6574c1ffcac4cffd.jpg https://graph.org/file/78fa060f516147718b4d1.jpg https://graph.org/file/012b6d30c8cac09ea3e06.jpg https://graph.org/file/f531e6e0927884bbcd698.jpg https://graph.org/file/67001dbf4f98b8b2b4eee.jpg https://graph.org/file/ca9474488631646ff9503.jpg https://graph.org/file/7255cc48b00b20293008c.jpg https://graph.org/file/1133ec9f62c1b3aad6865.jpg')).split() #SAMPLE PIC
+PICS = (environ.get('PICS', 'https://graph.org/file/271aa653b6b6e9dcdfd02.jpg https://graph.org/file/b61917d0c5509604de513.jpg https://graph.org/file/744e03bab800396621ca5.jpg https://graph.org/file/dec0fc9c9b75c9d94e51f.jpg https://graph.org/file/1c5529e5320112deaf8b6.jpg')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/b69af2db776e4e85d21ec.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/4499072a9f9f4ec1b9f5f.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
@@ -31,7 +31,7 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5
 # Admins, Channels & Users
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002057490725'))
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5019668523 6302921275').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002075429339 -1002145382878 -1001934525883 -1002039117054 -1002004849968 -1002073480988 -1002087386412 -1002121649557 -1001584064219 -1001749313075 -1002038633493 -1002137528664 -1002077178570 -1002029547741 -1002077178570 -1001613574728 -1002048583251 -1001482631371 -1002019402843 -1002019646585 -1002199963727 -1002148773240 -1001972977023 -1001942558541 -1002083199283 -1001972977023 -1001942558541 -1002083199283 -1001658823824 -1001116179493 -1002137528664 -1001609906203 -1001925233125 -1002094057193 -1002020242463 -1002079712359  -1002165297790 -1002158385438 -1002026546209 -1002228043698 -1001836124367 AV1world -1002101938265 -1002218808599 -1002004346552 -1001359686523 -1002004346552 -1002177674758 -1002233567861 -1002239734551 -1002196649548 -1002004346552 -1002126324229 -1001992468069 -1002090255299 -1001416240381 -1002048469984').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002048583251 -1002035565400 -1002079712359 -1002121649557 -1002046383949 -1002145382878 -1002075429339 -1002126324229').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
@@ -51,8 +51,8 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 
 # MongoDB information
 SECONDDB_URI = environ.get('SECONDDB_URI', None)
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Jarvisdb:Jarvisdb@jarvisdb.wpekcts.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Ultrondb")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Premium And Referal Settings
