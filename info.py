@@ -18,7 +18,7 @@ def is_enabled(value, default):
 # Bot information
 SESSION = environ.get('SESSION', 'N2Bot')
 API_ID = int(environ.get('API_ID', '27064328'))
-API_HASH = environ.get('API_HASH', '7be1392c2fe5ebf4fc3228706fbfb504'')
+API_HASH = environ.get('API_HASH', '7be1392c2fe5ebf4fc3228706fbfb504')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
